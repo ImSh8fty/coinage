@@ -1,0 +1,90 @@
+[gd_scene load_steps=8 format=3 uid="uid://d0ileywy0jh45"]
+
+[ext_resource type="Texture2D" uid="uid://demibc00x804" path="res://Free-Nature-Backgrounds-Pixel-Art3.png" id="1_mgc3s"]
+[ext_resource type="PackedScene" uid="uid://caoevc76btuo5" path="res://BaseMidPlatform.tscn" id="2_8qodv"]
+[ext_resource type="PackedScene" uid="uid://cqfe65ds2dq5c" path="res://Coin_Man.tscn" id="3_qgn11"]
+[ext_resource type="PackedScene" uid="uid://lkbebw1fkj6h" path="res://Spikes.tscn" id="4_w4h2s"]
+[ext_resource type="PackedScene" uid="uid://buann3j7fpso4" path="res://Moving Saw.tscn" id="5_4dqt4"]
+[ext_resource type="PackedScene" uid="uid://dnheti42esq0i" path="res://Collectable Coin.tscn" id="6_80p0g"]
+[ext_resource type="PackedScene" uid="uid://s1df340v7npy" path="res://dirt.tscn" id="7_fb0dx"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 1152.0
+offset_bottom = 648.0
+color = Color(0.0295066, 0.0295066, 0.0295066, 1)
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(576, 328)
+scale = Vector2(0.66859, 0.674587)
+texture = ExtResource("1_mgc3s")
+
+[node name="StaticBody2D" parent="." instance=ExtResource("2_8qodv")]
+position = Vector2(64, 592)
+
+[node name="StaticBody2D2" parent="." instance=ExtResource("2_8qodv")]
+position = Vector2(192, 592)
+
+[node name="StaticBody2D3" parent="." instance=ExtResource("2_8qodv")]
+position = Vector2(320, 592)
+
+[node name="StaticBody2D4" parent="." instance=ExtResource("2_8qodv")]
+position = Vector2(448, 592)
+
+[node name="StaticBody2D5" parent="." instance=ExtResource("2_8qodv")]
+position = Vector2(576, 592)
+
+[node name="StaticBody2D6" parent="." instance=ExtResource("2_8qodv")]
+position = Vector2(704, 592)
+
+[node name="StaticBody2D7" parent="." instance=ExtResource("2_8qodv")]
+position = Vector2(832, 592)
+
+[node name="StaticBody2D8" parent="." instance=ExtResource("2_8qodv")]
+position = Vector2(960, 592)
+
+[node name="StaticBody2D9" parent="." instance=ExtResource("2_8qodv")]
+position = Vector2(1088, 592)
+
+[node name="StaticBody2D10" parent="." instance=ExtResource("2_8qodv")]
+position = Vector2(1088, 192)
+
+[node name="StaticBody2D11" parent="." instance=ExtResource("2_8qodv")]
+position = Vector2(576, 496)
+
+[node name="StaticBody2D12" parent="." instance=ExtResource("2_8qodv")]
+position = Vector2(320, 496)
+
+[node name="StaticBody2D13" parent="." instance=ExtResource("2_8qodv")]
+position = Vector2(960, 320)
+
+[node name="Coin Man" parent="." instance=ExtResource("3_qgn11")]
+position = Vector2(64, 72)
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("5_4dqt4")]
+position = Vector2(896, 512)
+
+[node name="Spikes" parent="." instance=ExtResource("4_w4h2s")]
+position = Vector2(448, 520)
+
+[node name="Area2D" parent="." instance=ExtResource("6_80p0g")]
+position = Vector2(192, 472)
+
+[node name="Area2D2" parent="." instance=ExtResource("6_80p0g")]
+position = Vector2(320, 376)
+
+[node name="Area2D3" parent="." instance=ExtResource("6_80p0g")]
+position = Vector2(576, 376)
+
+[node name="Area2D4" parent="." instance=ExtResource("6_80p0g")]
+position = Vector2(960, 200)
+
+[node name="Area2D5" parent="." instance=ExtResource("6_80p0g")]
+position = Vector2(1088, 312)
+
+[node name="StaticBody2D14" parent="." instance=ExtResource("7_fb0dx")]
+position = Vector2(1400, 256)
+
+[node name="StaticBody2D15" parent="." instance=ExtResource("7_fb0dx")]
+position = Vector2(-256, 296)

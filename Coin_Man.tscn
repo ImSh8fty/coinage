@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://cqfe65ds2dq5c"]
+
+[ext_resource type="Texture2D" uid="uid://dts3j2rwqo70t" path="res://Coin Man Sprite.png" id="1_13teu"]
+[ext_resource type="Script" path="res://coin_man.gd" id="1_m1iuf"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_v11xd"]
+size = Vector2(56, 120)
+
+[node name="Coin_Man" type="CharacterBody2D"]
+script = ExtResource("1_m1iuf")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(4, 4)
+shape = SubResource("RectangleShape2D_v11xd")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(8, 88)
+texture = ExtResource("1_13teu")

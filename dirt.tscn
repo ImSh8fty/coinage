@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://s1df340v7npy"]
+
+[ext_resource type="Texture2D" uid="uid://dknnko3crxtm0" path="res://Free Platform Game Assets/Platform Game Assets/Tiles/png/512x512/Dirt.png" id="1_d4bgs"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kybkm"]
+size = Vector2(504, 888)
+
+[node name="StaticBody2D" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(4, -12)
+scale = Vector2(0.984375, 1.73438)
+texture = ExtResource("1_d4bgs")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(4, -12)
+shape = SubResource("RectangleShape2D_kybkm")

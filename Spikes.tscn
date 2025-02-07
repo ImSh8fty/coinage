@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://lkbebw1fkj6h"]
+
+[ext_resource type="Script" path="res://spikes.gd" id="1_ap2wl"]
+[ext_resource type="Texture2D" uid="uid://d1dpbvd6ymkym" path="res://Free Platform Game Assets/Platform Game Assets/Enemies/png/64x64/Spike_Up.png" id="1_t4pse"]
+
+[node name="Spikes" type="Node2D"]
+script = ExtResource("1_ap2wl")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_t4pse")
+
+[node name="Area2D" type="Area2D" parent="."]
+monitorable = false
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D"]
+polygon = PackedVector2Array(-32, 16, 0, -32, 32, 16)
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]

@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://caoevc76btuo5"]
+
+[ext_resource type="Texture2D" uid="uid://jcgiak7wpes1" path="res://Free Platform Game Assets/Platform Game Assets/Tiles/png/128x128/Grass.png" id="1_jnb3p"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5ll06"]
+size = Vector2(128, 128)
+
+[node name="BaseMidPlatform" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(3.33786e-06, 0)
+texture = ExtResource("1_jnb3p")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_5ll06")
